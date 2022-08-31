@@ -1,0 +1,66 @@
+﻿@model List<Question>
+
+<style>
+
+a:hover {
+    background-color: darkorange;
+}
+.tikla{
+    display:inline-block;
+    width:100px;
+}
+h3 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+i {
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+a {
+    margin: 10px;
+}
+
+#slug {
+    background-color: deepskyblue;
+    display: inline-block;
+}
+
+.card {
+    width: 900px;
+    background-color: aqua;
+}
+
+</style>
+
+<h3 class="alert-success">QUESTIONS</h3>
+
+@foreach (Question question in Model)
+{
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@question.Title</h4>
+        <div class="hizala">
+            <p class="card-text">@question.Content</p>
+            <p class="card-text" id="slug">@question.Slug</p>
+        </div>
+
+
+        <small><i>Posted on @question.CreatedAt</i></small>
+    </div>
+    <a href="@Url.Action("DetailQuestion","Home", new { id = question.ID })" class="btn btn-primary">Go to Detail</a>
+</div>
+ <hr>
+
+}
+
+
+
+
+
+
+

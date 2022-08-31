@@ -1,0 +1,10 @@
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.AssemblyInfoInputs.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.AssemblyInfo.cs
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.csproj.CoreCompileInputs.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\bin\Debug\netcoreapp3.1\Stackoverflow.Model.deps.json
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\bin\Debug\netcoreapp3.1\Stackoverflow.Model.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\bin\Debug\netcoreapp3.1\Stackoverflow.Model.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Model\obj\Debug\netcoreapp3.1\Stackoverflow.Model.csproj.AssemblyReference.cache

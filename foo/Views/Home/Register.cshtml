@@ -1,0 +1,95 @@
+﻿@model UserForRegisterDto;
+@{ Layout = null; }
+
+
+!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Awesome Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/register.css" />
+
+</head>
+<body>
+    <div class="col-md-4 col-md-offset-4" id="login">
+        <section id="inner-wrapper" class="login">
+            <article>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"> </i></span>
+                            <input type="text" class="form-control  first_name" placeholder="FirstName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"> </i></span>
+                            <input type="text" class="form-control last_name" placeholder="LastName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"> </i></span>
+                            <input type="email" class="form-control email_address" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"> </i></span>
+                            <input type="password" class="form-control password_info" placeholder="Password">
+                        </div>
+                    </div>
+                    @*<div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"> </i></span>
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                    </div>*@
+                    <button type="submit" class="btn btn-success btn-block btn_submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    </div>
+    <script>
+
+        $("document").ready(function () {
+            var first_name = "";
+            var last_name = "";
+            var email_address = "";
+            var password_info = "";
+            $(".btn_submit").click(function (e) {
+                e.preventDefault();
+                first_name = $(".first_name").val();
+                last_name = $(".last_name").val();
+                email_address = $(".email_address").val();
+                password_info = $(".password_info").val();
+
+                var _data = JSON.stringify({
+                    "FirstName": first_name,
+                    "LastName": last_name,
+                    "Password": password_info,
+                    "Email": email_address ,
+
+                });
+                console.log(_data);
+                $.ajax({
+                    type: "POST",
+                    url: '/home/registersend',
+                    contentType: 'application/json',
+                    data: _data,
+                    //success: function (data) {
+                    //    window.location = "/Home/questionview";
+                    //},
+                    //error: function (x, q, w) {
+                    //    console.log("Device control failed");
+                    //},
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

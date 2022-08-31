@@ -1,0 +1,96 @@
+﻿@model QuestionDto
+
+<style>
+    form {
+        display: none;
+    }
+
+    a {
+        margin-left: 5px;
+    }
+
+    .card {
+        width: 900px;
+        background-color: aqua;
+    }
+</style>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@Model.Title</h4>
+        <p class="card-text">@Model.Content</p>
+
+    </div>
+</div>
+
+<hr>
+
+<a id="@Model.ID" class="btn btn-primary tikla">Answer</a>
+
+<form  class="@Model.ID">
+    <div class="form-group">
+        <label for="comment">Your Answer:</label>
+        <input type="hidden" name="QuestionID" id="QuestionID" value="@Model.ID" />
+        <textarea name="textfield" id="textfield" class="form-control" rows="2" placeholder="Give your answer.." required></textarea>
+
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this question box to continue.</div>
+    </div>
+    <button style="margin-bottom:10px;" class="btn btn-primary btn-block active save_answer">Save</button>
+</form>
+
+@if (Model.answers != null)
+{
+    foreach (AnswerDto answer in Model.answers)
+    {
+        if (Model.ID == answer.QuestionID)
+        {
+            <div class="media border p-3">
+                <div class="media-body">
+                    <h4> @answer.TextField </h4>
+                </div>
+                <div>
+                    <small><i>Posted on @answer.CreatedAt</i></small>
+                </div>
+                <div>
+                    <a href="@Url.Action("DeleteAnswer", "Home", new { answer_id = answer.ID, question_id=answer.QuestionID })"  class="delete">Delete</a>
+                </div>
+            </div>
+        }
+
+    }
+}
+@section Scripts{
+
+    <script>
+
+        var QuestionID = "";
+        var textfield = "";
+        $(".save_answer").click(function (e) {
+            e.preventDefault();
+            QuestionID = $("#QuestionID").val();
+            textfield = $("#textfield").val();
+            var _data = JSON.stringify({
+                "TextField": textfield,
+                "QuestionID": parseInt(QuestionID),
+            });
+            console.log(_data);
+            $.ajax({
+                type: "POST",
+                url: '/home/answersend',
+                contentType: 'application/json',
+                data: _data,
+                success: function (data) {
+                      console.log("başarılı");
+                      window.location = "/home/detail/" + data;
+                  
+                },
+                error: function (x,q,w) {
+                    console.log("Device control failed");
+                },
+            });
+           
+        });
+
+    </script>
+}

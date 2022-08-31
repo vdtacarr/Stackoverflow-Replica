@@ -1,0 +1,16 @@
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.csproj.AssemblyReference.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.AssemblyInfoInputs.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.AssemblyInfo.cs
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.csproj.CoreCompileInputs.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Data.deps.json
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Data.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Data.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Model.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Model.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.csproj.CopyComplete
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Data.runtimeconfig.json
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\bin\Debug\netcoreapp3.1\Stackoverflow.Data.runtimeconfig.dev.json
+C:\Users\07018332\source\repos\foo\Stackoverflow.Data\obj\Debug\netcoreapp3.1\Stackoverflow.Data.genruntimeconfig.cache

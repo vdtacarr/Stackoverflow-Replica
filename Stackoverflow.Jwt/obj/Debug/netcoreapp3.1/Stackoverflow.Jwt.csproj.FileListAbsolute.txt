@@ -1,0 +1,15 @@
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.csproj.AssemblyReference.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.AssemblyInfoInputs.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.AssemblyInfo.cs
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.csproj.CoreCompileInputs.cache
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Jwt.deps.json
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Jwt.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Jwt.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Data.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Model.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Data.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\bin\Debug\netcoreapp3.1\Stackoverflow.Model.pdb
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.csproj.CopyComplete
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.dll
+C:\Users\07018332\source\repos\foo\Stackoverflow.Jwt\obj\Debug\netcoreapp3.1\Stackoverflow.Jwt.pdb

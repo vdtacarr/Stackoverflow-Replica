@@ -1,0 +1,81 @@
+﻿@{
+    Layout = "_Layout";
+}
+<style>
+    button {
+        margin-top: 10px;
+    }
+
+    a {
+        background-color: antiquewhite;
+    }
+
+        a:hover {
+            background-color: darkolivegreen;
+            width: 75px;
+            height: 20px;
+        }
+
+    .form-group {
+        width: 700px;
+    }
+
+    .form_question {
+        background-color: darkgrey;
+        border-style: dotted;
+        border-radius: 20px;
+    }
+</style>
+
+
+<form class="form_question">
+    Title : <input class="form-group m-1 title" placeholder="Title field" required /><br />
+
+    <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control m-1" rows="5" id="comment" placeholder="Content field" required></textarea>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this question box to continue.</div>
+    </div>
+    Slug : <br /><input class="m-1 slug" placeholder="Slug field" /><br />
+
+    <button class="btn btn-primary m-2 send_btn" type="submit">Save</button>
+
+    <a href="@Url.Action("ListQuestions")">Questions Page</a>
+</form>
+
+
+@section Scripts{
+
+    <script>
+        var comment = "";
+        var title = "";
+        var slug = "";
+        $(".send_btn").click(function (e) {
+            e.preventDefault();
+
+            comment = $("#comment").val();
+            title = $(".title").val();
+            slug = $(".slug").val();
+            var _data = JSON.stringify({
+                "Content": comment,
+                "Title": title,
+                "Slug": slug
+            });
+            $.ajax({
+                type: "POST",
+                url: '/home/questionsend',
+                contentType: 'application/json',
+                data: _data,
+                success: function (data) {
+                    if (data == "1") {
+                        window.location = "/home/questions";
+                    }
+                },
+                error: function (x, q, w) {
+                    window.location = "/home/login";                },
+            });
+        });
+
+    </script>
+}
